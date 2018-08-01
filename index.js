@@ -28,6 +28,7 @@ router.get('/averages', (req, res) => {
     if (err) return res.json({ success: false, error: err });
     return res.json({ success: true, data: average });
   }).sort('studentId');
+  return res.json({error: true, message: "oh shoot" };
 });
 
 app.get('*', (req, res) => {
