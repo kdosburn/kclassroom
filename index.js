@@ -25,6 +25,13 @@ router.get('/students', (req, res) => {
   });
 });
 
+router.get('/averages', (req, res) => {
+  Average.find((err, average) => {
+    if (err) return res.json({ success: false, error: err });
+    return res.json({ success: true, data: average });
+  }).sort('studentId');
+});
+
 // Put all API endpoints under '/api'
 app.get('/api/passwords', (req, res) => {
   const count = 5;

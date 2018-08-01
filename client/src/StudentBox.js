@@ -15,7 +15,7 @@ class StudentBox extends Component {
 	}
 
 	componentDidMount() {
-		// this.loadStudentsFromServer();
+		this.loadStudentsFromServer();
 	}
 
 	loadStudentsFromServer = () => {
@@ -33,7 +33,7 @@ class StudentBox extends Component {
 			<div className="container">
 				<div className="students">
 					<h2> STUDENTS: </h2>
-					<StudentList data={DATA} />
+					<StudentList data={this.state.data} />
 				</div>
 			</div>
 		);
