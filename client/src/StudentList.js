@@ -5,7 +5,7 @@ import Student from './Student';
 const StudentList = (props) => {
 	const studentNodes = props.data.map(student => (
 		<Student student={student} firstName={student.firstName} lastName={student.lastName} key={student.studentId} id={student.StudentId}  >
-			testing {student.firstName} {student.lastName} 
+			testing {student.firstName} {student.lastName}
 		</Student>
 	));
 	return (
