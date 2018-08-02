@@ -22,7 +22,6 @@ class StudentBox extends Component {
 		fetch('/api/averages')
 			.then(data => data.json())
 			.then((res) => {
-				console.log(res.data);
 				if(!res.success) this.setState({ error: res.error });
 				else this.setState({ data: res.data });
 			});
