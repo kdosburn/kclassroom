@@ -3,6 +3,8 @@ const path = require('path');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const generatePassword = require('password-generator');
+const Average = require('./models/average');
+const Student = require('./models/student');
 const secrets = require('./secrets');
 
 const app = express();

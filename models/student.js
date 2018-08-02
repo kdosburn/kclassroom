@@ -10,4 +10,4 @@ const StudentsSchema = new Schema({
 }, { timestamps: true });
 
 // export default mongoose.model('Student', StudentsSchema);
-module.exports('Student', StudentsSchema);
+module.exports = mongoose.model('Student', StudentsSchema);
