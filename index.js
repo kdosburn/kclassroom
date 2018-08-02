@@ -22,14 +22,6 @@ router.get('/', (req, res) => {
 	res.json({ message: 'Hello, World!' });
 });
 
-// router.get('/students', (req, res) => {
-// 	console.log('getting here!!');
-//   Student.find((err, students) => {
-//     if (err) return res.json({ success: false, error: err });
-//     return res.json({ success: true, data: students });
-//   });
-// });
-
 router.get('/averages', (req, res) => {
   Average.find((err, average) => {
     if (err) return res.json({ success: false, error: err });
@@ -42,8 +34,7 @@ router.get('/averages', (req, res) => {
 // });
 
 const port = process.env.PORT || 5000;
-app.listen(port);
 
 app.use('/api', router);
-
+app.listen(port);
 console.log(`Listening on ${port}`);
