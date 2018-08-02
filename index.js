@@ -18,7 +18,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-router.get('/averages', (req, res) => {
+app.get('/averages', (req, res) => {
   Average.find((err, average) => {
     if (err) return res.json({ success: false, error: err });
     return res.json({ success: true, data: average });
