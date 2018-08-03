@@ -29,10 +29,13 @@ class StudentBox extends Component {
 
 	render() {
 		return (
-			<div className="container">
-				<div className="students">
-					<h2> STUDENTS: </h2>
-					<StudentList data={this.state.data} />
+			<div>
+				<div className="topBar"><img src="./images/codeSpark_logo.png" /></div>
+				<div className="container">
+					<div className="students">
+						<h2> STUDENTS!!!: </h2>
+						<StudentList data={this.state.data} />
+					</div>
 				</div>
 			</div>
 		);

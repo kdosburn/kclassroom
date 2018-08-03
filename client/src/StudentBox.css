@@ -13,10 +13,10 @@
 
 .students {
   /*border: 2px solid green;*/
-  /*overflow: auto;*/
-  /*width: 75%;*/
-  max-width: 800px;
-  min-width: 300px;
+  overflow: auto;
+  width: 75%;
+/*  max-width: 800px;
+  min-width: 300px;*/
 }
 
 .students h2 {
@@ -37,7 +37,7 @@
 
 .studentInfo {
   /*border: 2px solid blue;*/
-  width: 100px;
+  /*width: 100px;*/
   display: flex;
   padding: 5px;
 }
@@ -63,7 +63,8 @@
   /*border-right: 2px solid red;*/
   -webkit-flex-wrap: nowrap; /* Safari */
   flex-wrap: nowrap;
-  font-size: 12px;
+  flex: space-between;
+  font-size: 16px;
   text-align: center;
   padding: 5px;
   background-color: white;
@@ -72,9 +73,10 @@
 
 .singleStudentTests li {
   display: flex;
-  width: 30px;
+  width: 50px;
   border-right: 1px solid #ccc;
   margin: 5px;
+  color: #00ba12;
 }
 
 .singleStudent tr {
@@ -98,3 +100,8 @@
   color: #385997;
 }
 
+.topBar {
+  height: 50px;
+  background-color: white;
+  border-bottom: 4px solid #244efe;
+}
