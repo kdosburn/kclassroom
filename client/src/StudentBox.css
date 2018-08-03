@@ -56,12 +56,14 @@
 }
 
 .studentAverage {
+  color: #00ba12;
+  width: 20px;
   /*padding: 5px;*/
 }
 
 .studentName {
   /*border: 2px solid orange;*/
-  width: 80px;
+  width: 110px;
 }
 
 .studentFirstName {
